@@ -37,7 +37,7 @@ eddiso --help
 Print a list of HTTP URLs of instances of the Erddap (TM) scientific data server software to the screen:
 
 ```console
-eddiso --awesome {RL}
+eddiso --awesome {URL}
 ```
 
 ### Harvest ISO19139 XML Files
@@ -58,6 +58,7 @@ eddiso --server https://erddap.marine.ie/erddap/
 
 The following return codes are used in the main function of `eddiso`.
 
+| | |
 |-|-|
 |0|OK|
 |-1|Invocation error: |
