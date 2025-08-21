@@ -18,7 +18,7 @@ An ISO19139 XML metaadata record harvester to work from instances of the Erddap 
 
 An example compilation command is shown below, using GCC:
 
-```shell
+```console
 gcc -Iinclude eddiso.c src/man.c -o eddiso
 ```
 
@@ -28,7 +28,7 @@ gcc -Iinclude eddiso.c src/man.c -o eddiso
 
 Print a help page to the screen:
 
-```shell
+```console
 eddiso --help
 ```
 
@@ -36,20 +36,21 @@ eddiso --help
 
 Print a list of HTTP URLs of instances of the Erddap (TM) scientific data server software to the screen:
 
-```shell
+```console
+eddiso --awesome {RL}
 ```
 
 ### Harvest ISO19139 XML Files
 
 Retrieve ISO19139 XML datasets for all datasets on an instance of the Erddap (TM) scientific data server software to a specified loacation:
 
-```shell
+```console
 eddiso --server {URL}
 ```
 
 where URL is the web address of an instance of the Erddap (TM) scientific data server software. e.g.:
 
-```shell
+```console
 eddiso --server https://erddap.marine.ie/erddap/
 ```
 
@@ -57,7 +58,6 @@ eddiso --server https://erddap.marine.ie/erddap/
 
 The following return codes are used in the main function of `eddiso`.
 
-|||
 |-|-|
 |0|OK|
 |-1|Invocation error: |
