@@ -19,10 +19,12 @@ An ISO19139 XML metaadata record harvester to work from instances of the Erddap 
 An example compilation command is shown below, using GCC:
 
 ```console
-gcc -Iinclude eddiso.c src/man.c -o eddiso
+gcc -Iinclude eddiso.c src/man.c src/version.c -o eddiso
 ```
 
 ## Run
+
+The following sections show the different options available in eddiso.
 
 ### Display Help
 
@@ -30,6 +32,14 @@ Print a help page to the screen:
 
 ```console
 eddiso --help
+```
+
+### Get Version Information
+
+Print the version of the `eddiso` installation to the screen.
+
+```console
+eddiso --version
 ```
 
 ### List Erddap Servers
@@ -45,7 +55,7 @@ eddiso --awesome {URL}
 Retrieve ISO19139 XML datasets for all datasets on an instance of the Erddap (TM) scientific data server software to a specified loacation:
 
 ```console
-eddiso --server {URL}
+eddiso --server {URL} {OUTDIR}
 ```
 
 where URL is the web address of an instance of the Erddap (TM) scientific data server software. e.g.:
@@ -61,5 +71,6 @@ The following return codes are used in the main function of `eddiso`.
 | | |
 |-|-|
 |0|OK|
-|-1|Invocation error: |
-|-2|Invocation error: |
+|-1|Invocation error: No mode flag supplied|
+|-2|Invocation error: Multiple mode flags supplied|
+|-3|Invocation error: Wrong number of input arguments supplied|
