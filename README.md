@@ -8,6 +8,7 @@ An ISO19139 XML metaadata record harvester to work from instances of the Erddap 
 - [Compile](#compile)
 - [Run](#run)
     - [Display Help](#display-help)
+    - [Get Version Information](#get-version-information)
     - [List Erddap Servers](#list-erddap-servers)
     - [Harvest ISO19139 XML Files](#harvest-iso19139-xml-files)
     - [Main Function Return Codes](#main-function-return-codes)

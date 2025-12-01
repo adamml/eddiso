@@ -3,7 +3,7 @@
  *
  * @author: Adam Leadbetter (@adamml)
  * @date:
- * @licence:
+ * @licence: Unlicense
  * @version:
  */
 
